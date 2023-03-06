@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>số tiền gửi</p>
+    <input id="tien" type="text">
+    <p>% gửi</p>
+    <input id="gui" type="text">
+    <p>số tháng</p>
+    <input id="thang" type="text">
+    <button id="ok" onclick="kq()">lãi của bạn</button>
+    <!-- <input id="kq" type="text"> -->
+    <p id="kq"></p>
+    <script>
+        function kq() {
+            let a = +document.getElementById("tien").value;
+            let b = +document.getElementById("gui").value;
+            let c = +document.getElementById("thang").value;
+            // let d = 
+            let e = a * (b / (12 * 100)) * c;       
+            document.getElementById("kq").innerHTML = e ;
+        }
+    </script>
+    <!-- <script>
+        let a = +prompt(" số tiền gủi");
+        let b = +prompt("% gủi");
+        let c = +prompt("số tháng");
+        let d = a * (b/(12*100)) * c
+        document.write(d)
+
+    </script> -->
+</body>
+
+</html>
